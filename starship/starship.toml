@@ -1,0 +1,21 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+[battery]
+full_symbol = ':batterie: '
+charging_symbol = ':haute_tension:️ '
+discharging_symbol = ':crâne: '
+[[battery.display]]
+threshold = 30
+style = 'bold red'
+[[battery.display]]
+threshold = 78
+style = 'bold yellow'
+[[battery.display]]
+threshold = 80
+style = 'bold green'
+
+[character]
+error_symbol = "[:signe_de_multiplication_trait_plein:](bold red)"
+success_symbol = '[➜](bold green)'
